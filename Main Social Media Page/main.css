@@ -32,3 +32,11 @@ body{
     border: 1px solid #9c1e1e; 
     cursor: pointer; 
 }
+
+.navbarElement:hover{ 
+    background-color: #fba9c7;
+}
+
+.navbarElement:active{ 
+    background-color: #fba9c7;
+}
