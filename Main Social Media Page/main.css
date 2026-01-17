@@ -95,7 +95,7 @@ body{
     justify-content: center;  */ 
     }
 
-#image{
+.image{
     height: 210px;
     border: 1px solid #000000;
     width: 270px;   
@@ -103,4 +103,26 @@ body{
 
 #postText{
     margin-top: 8px; 
+}
+
+#postContainer{
+    display: none; 
+} 
+
+#badgeContainer{
+    display: none; 
+}
+
+.badge{
+    background-color: #fffafc; 
+    border: 2px solid #ff697a; 
+    height: 110px; 
+    width: 90px; 
+    margin-top: 10px; 
+    margin-left: 10px; 
+    cursor: pointer; 
+}
+
+.badgeImage{
+    height: 70px; 
 }

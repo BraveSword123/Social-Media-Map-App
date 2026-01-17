@@ -12,23 +12,41 @@
 
   <div id="sidebar">
     <nav id="navbarContainer">
-        <button class="navbarElement"></button>
-        <button class="navbarElement"></button>
-        <button class="navbarElement"></button>
+        <button class="navbarElement">Profile</button>
+        <button class="navbarElement" onclick="showBadges()">Badges</button>
+        <button class="navbarElement" onclick="showPosts()">Posts</button>
         <button class="navbarElement"></button>
     </nav> 
   <!-- <button id="locationButton">Location: Off</button> --> 
+   <section id="badgeContainer">
+    <button class="badge">
+        <img src="./Images/bunny_placeholder.png" alt="pixel art of a bunny" class="badgeImage">
+    </button>
+    <button class="badge">
+        <img src="./Images/dolphin_placeholder.png" alt="pixel art of a dolphin" class="badgeImage">
+    </button>
+    <button class="badge">
+        <img src="./Images/jellyfish_placeholder.png" alt="pixel art of a jellyfish" class="badgeImage">
+    </button>
+    <button class="badge">
+        <img src="./Images/goldfish_placeholder.png" alt="pixel art of a goldfish" class="badgeImage">
+    </button>
+    <button class="badge">
+        <img src="./Images/swan_placeholder.png" alt="pixel art of a swan" class="badgeImage">
+    </button>
+   </section>
    <section id="postContainer">
     <article class="post">
-        <img src="./Images/library_image.jpg" alt="a person searching through books in a library" id="image">  
+        <img src="./Images/library_image.jpg" alt="a person searching through books in a library" class="image">  
+        <!-- Make it so if someone adds enough text you will just get three dots -->
         <p id="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
     </article>
     <article class="post">
-             <img src="./Images/museum_image.png" alt="two people looking at a painting" id="image">
+             <img src="./Images/museum_image.png" alt="two people looking at a painting" class="image">
         <p id="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
     </article>
     <article class="post">
-                     <img src="./Images/restaurant_image.webp" alt="tables of people eating at a restaurant" id="image">
+                     <img src="./Images/restaurant_image.webp" alt="tables of people eating at a restaurant" class="image">
                     <p id="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
                      
     </article>
