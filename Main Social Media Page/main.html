@@ -12,12 +12,15 @@
 
   <div id="sidebar">
     <nav id="navbarContainer">
-        <button class="navbarElement">Profile</button>
-        <button class="navbarElement" onclick="showBadges()">Badges</button>
-        <button class="navbarElement" onclick="showPosts()">Posts</button>
-        <button class="navbarElement"></button>
+        <button class="navbarElement" onclick="showProfile()" id="profileButton">Profile</button>
+        <button class="navbarElement" onclick="showBadges()" id="badgesButton">Badges</button>
+        <button class="navbarElement" onclick="showPosts()" id="postsButton">Posts</button>
+        <button class="navbarElement">Locations</button>
     </nav> 
   <!-- <button id="locationButton">Location: Off</button> --> 
+   <section id="profileContainer">
+    <button id="createPostButton">Create Post</button>
+   </section>
    <section id="badgeContainer">
     <button class="badge">
         <img src="./Images/bunny_placeholder.png" alt="pixel art of a bunny" class="badgeImage">
