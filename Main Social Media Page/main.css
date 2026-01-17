@@ -1,7 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;  
     font-weight: 550;
-    /* overflow-y: hidden; */ 
+    overflow-y: hidden; 
 }
 #sidebar{
     height: 860px; 
@@ -47,13 +47,13 @@ body{
     cursor: pointer; 
 }
 
-.navbarElement:hover{ 
+ /* .navbarElement:hover{ 
     background-color: #fba9c7;
 }
 
 .navbarElement:active{ 
     background-color: #fba9c7;
-}
+} */  
 
 #spriteContainer{ 
     height: 180px; 
@@ -171,4 +171,53 @@ body{
 
 #createPostButton:active{
   transform: scale(0.98); 
+}
+
+#turnOnLocationMessage{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 23px; 
+    margin-top: 10px;
+    margin-left: 10px;  
+    margin-right: 10px;  
+    padding: 10px; 
+    background-color: #fffafc;
+    border: 2px solid #ff697a; 
+    color: #ff697a;
+    text-align: center;  
+}
+
+#toggleLocationButton{
+    font-size: 27px; 
+    font-weight: 900; 
+    font-style: italic; 
+    color: #ff697a;
+    height: 80px; 
+    width: 250px; 
+    margin-top: 10px; 
+    margin-left: 10px; 
+    background-color: #fffafc;
+    border: 2px solid #ff697a; 
+    cursor: pointer; 
+}
+
+#toggleLocationButton:hover{
+    background-color: #ff8f9c; 
+    color: #fffafc;
+    transition: 0.3s; 
+}
+
+#toggleLocationButton:active{
+    transform: scale(0.98); 
+    transition: 0.3s;
+}
+
+#locationFooter{
+    background-color: #ffc1c8; 
+    border-top: 2px solid #ff697a;  
+    margin-top: 602px; 
+    height: 100.2px; 
+}
+
+#locationsContainer{
+    display: none; 
 }

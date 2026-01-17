@@ -10,12 +10,12 @@
 <body>
     <img src="./Pixel_Art/Sprite_Placeholder.png" alt="Sprite placeholder" id="Sprite">
 
-  <div id="sidebar">
+  <aside id="sidebar">
     <nav id="navbarContainer">
         <button class="navbarElement" onclick="showProfile()" id="profileButton">Profile</button>
         <button class="navbarElement" onclick="showBadges()" id="badgesButton">Badges</button>
         <button class="navbarElement" onclick="showPosts()" id="postsButton">Posts</button>
-        <button class="navbarElement">Locations</button>
+        <button class="navbarElement" onclick="showLocations()" id="locationsButton">Locations</button>
     </nav> 
   <!-- <button id="locationButton">Location: Off</button> --> 
    <section id="profileContainer">
@@ -54,7 +54,16 @@
                      
     </article>
    </section>
-    </div>
+   <section id="locationsContainer">
+        <article id="turnOnLocationMessage">
+            Please let this site know your location to use this feature. 
+        </article>
+        <footer id="locationFooter">
+            <button id="toggleLocationButton"> Location: Off </button> <!-- This button will be used to prompt for location or turn off location-->
+            <!-- We will eventially have a search tool so you dont need location on -->
+        </footer>
+   </section>
+    </aside>
     <div id="spriteContainer">
         
     </div> 
