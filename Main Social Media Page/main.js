@@ -39,9 +39,9 @@ class locations {
 }  
 
 let mainUser = new user(0, "myUserName", new Set(), [new badges(0, "Animal Rescuer", "Visit an Animal Schelter"), new badges(1, "Beach-Goer", "Visited a Beach"), new badges(2, "Marine Enthusiast", "Visited an Aquarium"), new badges(3, "Animal Lover", "Visited an Pet Store"), new badges(4, "Botanist", "Visit a Botanical Garden")]);
-let fakeUserOne = new user(1, "love_to_read", new Set(), new badges());  // Annabelle - Add Badges Here 
-let fakeUserTwo = new user(2, "traveling_artist", new Set(), new badges()); // Annabelle - Add Badges Here 
-let fakeUserThree = new user(3, "world_voyager", new Set(), new badges());  // Annabelle - Add Badges Here 
+let fakeUserOne = new user(1, "love_to_read", new Set(), new badges());  
+let fakeUserTwo = new user(2, "traveling_artist", new Set(), new badges()); 
+let fakeUserThree = new user(3, "world_voyager", new Set(), new badges());  
 
 const userLocationZero = new locations(0, "Westfield Topanga", "Shopping Mall", 34.19047, -118.603163, "Temporary Description");  
 const userLocationOne = new locations(1, "Topanga Village", "Shopping Mall", 34.18517, -118.60397, "Temp Description"); 
