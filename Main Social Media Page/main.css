@@ -47,6 +47,11 @@ body{
     cursor: pointer; 
 }
 
+.navbarElement:hover{
+    background: #fba9c7;
+    transition: 0.3s; 
+}
+
 .navbarElement.active{ /* Create Class List active*/ 
         background: #fba9c7;
 }
