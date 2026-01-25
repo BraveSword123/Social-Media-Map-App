@@ -40,20 +40,16 @@ body{
     display: flex; 
 }
 .navbarElement{
-    background-color: #ff69a0; 
+    background: #ff69a0; 
     height: 60px; 
     width: 100px; 
     border: 1px solid #9c1e1e; 
     cursor: pointer; 
 }
 
- /* .navbarElement:hover{ 
-    background-color: #fba9c7;
+.navbarElement.active{ /* Create Class List active*/ 
+        background: #fba9c7;
 }
-
-.navbarElement:active{ 
-    background-color: #fba9c7;
-} */  
 
 #spriteContainer{ 
     height: 180px; 
@@ -116,9 +112,6 @@ body{
     display: none; 
 } 
 
-#profileButton{
-    background-color: rgb(251, 169, 199);
-}
 
 #badgeContainer{
     display: none; 
