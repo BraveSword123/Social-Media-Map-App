@@ -4,69 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Map App</title>
-    <!-- Optional: Link to a CSS file -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <img src="./Pixel_Art/Sprite_Placeholder.png" alt="Sprite placeholder" id="Sprite">
 
-  <aside id="sidebar">
-    <nav id="navbarContainer">
-        <button class="navbarElement active" onclick="showProfile()" id="profileButton">Profile</button>
-        <button class="navbarElement" onclick="showBadges()" id="badgesButton">Badges</button>
-        <button class="navbarElement" onclick="showPosts()" id="postsButton">Posts</button>
-        <button class="navbarElement" onclick="showLocations()" id="locationsButton">Locations</button>
-    </nav> 
-   <section id="profileContainer">
-    <button id="createPostButton">Create Post</button>
-   </section>
-   <section id="badgeContainer">
-    <button class="badge" title="Animal Rescuer">
-        <img src="./Images/bunny_placeholder.png" alt="pixel art of a bunny" class="badgeImage">
-    </button>
-    <button class="badge" title="Beach-Goer">
-        <img src="./Images/dolphin_placeholder.png" alt="pixel art of a dolphin" class="badgeImage">
-    </button>
-    <button class="badge" title="Marine Enthusiast">
-        <img src="./Images/jellyfish_placeholder.png" alt="pixel art of a jellyfish" class="badgeImage">
-    </button>
-    <button class="badge" title="Animal Lover">
-        <img src="./Images/goldfish_placeholder.png" alt="pixel art of a goldfish" class="badgeImage">
-    </button>
-    <button class="badge" title="Botanist">
-        <img src="./Images/swan_placeholder.png" alt="pixel art of a swan" class="badgeImage">
-    </button>
-   </section>
-   <section id="postContainer">
-    <article class="post">
-        <img src="./Images/library_image.jpg" alt="a person searching through books in a library" class="image">  
-        <!-- Make it so if someone adds enough text you will just get three dots -->
-        <p id="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
-    </article>
-    <article class="post">
-             <img src="./Images/museum_image.png" alt="two people looking at a painting" class="image">
-        <p id="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
-    </article>
-    <article class="post">
-                     <img src="./Images/restaurant_image.webp" alt="tables of people eating at a restaurant" class="image">
-                    <p id="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
-                     
-    </article>
-   </section>
-   <section id="locationsContainer">
-        <article id="turnOnLocationMessage">
-            Please let this site know your location to use this feature. 
-        </article>
-        <footer id="locationFooter">
-            <button id="toggleLocationButton"> Location: Off </button> 
-            <!-- This button will be used to prompt for location or turn off location-->
-        </footer>
-   </section>
+    <aside id="sidebar">
+        <nav id="navbarContainer">
+            <button class="navbarElement active" onclick="showProfile()" id="profileButton">Profile</button>
+            <button class="navbarElement" onclick="showBadges()" id="badgesButton">Badges</button>
+            <button class="navbarElement" onclick="showPosts()" id="postsButton">Posts</button>
+            <button class="navbarElement" onclick="showLocations()" id="locationsButton">Locations</button>
+        </nav> 
+
+        <section id="profileContainer">
+            <button id="createPostButton">Create Post</button>
+        </section>
+
+        <section id="badgeContainer">
+            <button class="badge" title="Animal Rescuer">
+                <img src="./Images/bunny_placeholder.png" alt="pixel art of a bunny" class="badgeImage">
+            </button>
+            <button class="badge" title="Beach-Goer">
+                <img src="./Images/dolphin_placeholder.png" alt="pixel art of a dolphin" class="badgeImage">
+            </button>
+            <button class="badge" title="Marine Enthusiast">
+                <img src="./Images/jellyfish_placeholder.png" alt="pixel art of a jellyfish" class="badgeImage">
+            </button>
+            <button class="badge" title="Animal Lover">
+                <img src="./Images/goldfish_placeholder.png" alt="pixel art of a goldfish" class="badgeImage">
+            </button>
+            <button class="badge" title="Botanist">
+                <img src="./Images/swan_placeholder.png" alt="pixel art of a swan" class="badgeImage">
+            </button>
+        </section>
+
+        <section id="postContainer">
+            <article class="post">
+                <img src="./Images/library_image.jpg" alt="a person searching through books in a library" class="image">  
+                <p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
+            </article>
+            <article class="post">
+                <img src="./Images/museum_image.png" alt="two people looking at a painting" class="image">
+                <p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
+            </article>
+            <article class="post">
+                <img src="./Images/restaurant_image.webp" alt="tables of people eating at a restaurant" class="image">
+                <p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis.</p>
+            </article>
+        </section>
+
+        <section id="locationsContainer">
+            <article id="turnOnLocationMessage">
+                Please let this site know your location to use this feature. 
+            </article>
+            <footer id="locationFooter">
+                <button id="toggleLocationButton"> Location: Off </button>
+            </footer>
+        </section>
     </aside>
-    <div id="spriteContainer">
-        
-    </div> 
-    <!-- Optional: Link to a JavaScript file -->
+
+    <div id="spriteContainer"></div> 
+
+    <!-- Optional: Link to JavaScript file -->
     <script src="main.js"></script>
+
+    <!-- Badge popup -->
+    <div id="badgePopup">
+        <img id="popupBadgeImage" src="" alt="Badge">
+        <p id="popupBadgeText"></p>
+    </div>
 </body>
 </html>

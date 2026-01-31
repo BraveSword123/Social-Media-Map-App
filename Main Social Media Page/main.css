@@ -3,6 +3,7 @@ body{
     font-weight: 550;
     overflow-y: hidden; 
 }
+
 #sidebar{
     height: 860px; 
     width: 400px; 
@@ -12,7 +13,7 @@ body{
     overflow-y: auto;  
 }
 
- #sidebar::-webkit-scrollbar{
+#sidebar::-webkit-scrollbar{
     width: 15px; 
 }    
 
@@ -39,6 +40,7 @@ body{
 #navbarContainer{
     display: flex; 
 }
+
 .navbarElement{
     background: #ff69a0; 
     height: 60px; 
@@ -52,8 +54,8 @@ body{
     transition: 0.3s; 
 }
 
-.navbarElement.active{ /* Create Class List active*/ 
-        background: #fba9c7;
+.navbarElement.active{ 
+    background: #fba9c7;
 }
 
 #spriteContainer{ 
@@ -92,16 +94,16 @@ body{
     cursor: pointer; 
     padding-top: 20px; 
     padding-left: 25px; 
-    }
+}
 
-    .post:hover{
-        border: 2px solid #000000; 
-    } 
+.post:hover{
+    border: 2px solid #000000; 
+} 
 
-    .post:active{
-        transform: scale(0.98); 
-        transition: 0.3s;
-    }
+.post:active{
+    transform: scale(0.98); 
+    transition: 0.3s;
+}
 
 .image{
     height: 210px;
@@ -109,14 +111,13 @@ body{
     width: 270px;   
 }
 
-#postText{
+.postText{
     margin-top: 8px; 
 }
 
 #postContainer{
     display: none; 
 } 
-
 
 #badgeContainer{
     display: none; 
@@ -218,4 +219,48 @@ body{
 
 #locationsContainer{
     display: none; 
+}
+
+/* Badge Popup */
+#badgePopup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fffafc;
+    border: 3px solid #ff697a;
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+#badgePopup.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#badgePopup img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+#badgePopup p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ff697a;
+    margin: 0;
+}
+
+/* Optional: mark earned badges */
+.badge.earned {
+    border: 3px solid gold;
+    filter: brightness(1.2);
 }
