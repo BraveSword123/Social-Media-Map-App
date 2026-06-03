@@ -39,7 +39,7 @@ class locations {
     }
 }  
 
-let mainUser = new user(0, "myUserName", new Set(), [new badges(0, "Animal Rescuer", "Visit an Animal Schelter"), new badges(1, "Beach-Goer", "Visited a Beach"), new badges(2, "Marine Enthusiast", "Visited an Aquarium"), new badges(3, "Animal Lover", "Visited an Pet Store"), new badges(4, "Botanist", "Visit a Botanical Garden")]);
+let mainUser = new user(0, "myUserName", new Set(), [new badges(0, "Animal Rescuer", "Visit an Animal Shelter"), new badges(1, "Beach-Goer", "Visited a Beach"), new badges(2, "Marine Enthusiast", "Visited an Aquarium"), new badges(3, "Animal Lover", "Visited an Pet Store"), new badges(4, "Botanist", "Visit a Botanical Garden")]);
 let fakeUserOne = new user(1, "love_to_read", new Set(), new badges());  
 let fakeUserTwo = new user(2, "traveling_artist", new Set(), new badges()); 
 let fakeUserThree = new user(3, "world_voyager", new Set(), new badges());  
