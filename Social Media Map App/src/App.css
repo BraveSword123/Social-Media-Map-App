@@ -237,3 +237,22 @@ body{
 .navbarElement.active{ /* Create Class List active*/ 
         background: #fba9c7;
 }
+
+#spriteContainer{ 
+    height: 180px; 
+    width: 118px; 
+    background-color: #fffafc; 
+    border: 2px solid #ff69a0;  
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    z-index: -1; 
+}
+
+#Sprite{
+    position: fixed; 
+    height: 250px; 
+    bottom: -20px; 
+    right: -10px; 
+    cursor: pointer; 
+}
