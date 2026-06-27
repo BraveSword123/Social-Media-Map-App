@@ -11,6 +11,9 @@ import {useState} from 'react';
 function SidebarButton(props: any) {
     // onClick="showProfile()" "
     // id="profileButton"
+    /* if(props.name === "Profile"){
+      return<button>Create Post</button>; 
+    } */ 
   return(
         <button className="navbarElement"
         //onClick={() => setisActive((p) => !p)} 
