@@ -1,4 +1,4 @@
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +181,59 @@
     right: 0;
     border-right-color: var(--border);
   }
+} */ 
+body{
+    font-family: 'Courier New', Courier, monospace;  
+    font-weight: 550;
+    overflow-y: hidden; 
+}
+#sidebar{
+    height: 860px; 
+    width: 400px; 
+    background-color: #fef0f5;
+    border: 2px solid #c7387d;  
+    margin: -8px; 
+    overflow-y: auto;  
+    display: flex; 
+}
+
+ #sidebar::-webkit-scrollbar{
+    width: 15px; 
+}    
+
+#sidebar::-webkit-scrollbar-track{
+    background-color: #fef0f5;  
+} 
+
+#sidebar::-webkit-scrollbar-thumb{
+    background: #ff697a;
+    border: 1px solid #c7387d; 
+    cursor: pointer; 
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover{
+     background: #fe8d9a;
+     border: 1px solid #ca588f; 
+}
+
+#sidebar::-webkit-scrollbar-thumb:active{
+     background: #fe8d9a;
+     border: 1px solid #ca588f; 
+}
+
+.navbarElement{
+    background: #ff69a0; 
+    height: 60px; 
+    width: 100px; 
+    border: 1px solid #9c1e1e; 
+    cursor: pointer; 
+}
+
+.navbarElement:hover{
+    background: #fba9c7;
+    transition: 0.3s; 
+}
+
+.navbarElement.active{ /* Create Class List active*/ 
+        background: #fba9c7;
 }

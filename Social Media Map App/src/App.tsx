@@ -1,4 +1,4 @@
-import { useState } from 'react'
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -117,6 +117,21 @@ function App() {
       <section id="spacer"></section>
     </>
   )
+}
+
+export default App */ 
+// import '../App.css'; 
+import SidebarButton from './Components/SidebarButton'; 
+
+function App() {
+  return(
+    <div id="sidebar">
+        <SidebarButton name="Profile"/>
+        <SidebarButton name="Badges"/>
+        <SidebarButton name="Posts"/>
+        <SidebarButton name="Locations"/>
+    </div>
+  ); 
 }
 
 export default App
