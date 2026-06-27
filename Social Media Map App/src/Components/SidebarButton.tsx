@@ -1,6 +1,6 @@
 import '../App.css'
 
-function SidebarButton(props) {
+function SidebarButton(props: any) {
     // onClick="showProfile()" "
     // id="profileButton"
   return(
