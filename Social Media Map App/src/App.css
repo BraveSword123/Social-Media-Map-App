@@ -187,18 +187,30 @@ body{
     font-weight: 550;
     overflow-y: hidden; 
 }
-#sidebar{
-    height: 860px; 
-    width: 400px; 
+#navbarContainer{
+    height:60px; 
+    width: 400px;  
     background-color: #fef0f5;
     border: 2px solid #c7387d;  
     margin: -8px; 
     overflow-y: auto;  
     display: flex; 
+    /* position:fixed;   */ 
+}
+
+#sidebar{
+    height: 860px; 
+    /* width: 400px; */ 
+    width: 395px; 
+    background-color: #fef0f5;
+    border: 2px solid #c7387d;  
+    margin: -8px; 
+    overflow-y: auto; 
+    overflow-x: hidden;  
 }
 
  #sidebar::-webkit-scrollbar{
-    width: 15px; 
+    width: 15px;  
 }    
 
 #sidebar::-webkit-scrollbar-track{
@@ -256,3 +268,45 @@ body{
     right: -10px; 
     cursor: pointer; 
 }
+
+#postContainer{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+.post{
+    background-color: #ffffff;
+    height: 290px; 
+    width: 300px; 
+    border: 1px solid #000000; 
+    cursor: pointer; 
+    padding-top: 20px; 
+    padding-left: 25px; 
+    }
+
+    .post:hover{
+        border: 2px solid #000000; 
+    } 
+
+    .post:active{
+        transform: scale(0.98); 
+        transition: 0.3s;
+    }
+
+.image{
+    height: 210px;
+    border: 1px solid #000000;
+    width: 270px;   
+}
+
+.postText{
+    margin-top: 8px; 
+}
+
+/* #postContainer{
+    display: none; 
+}  */ 

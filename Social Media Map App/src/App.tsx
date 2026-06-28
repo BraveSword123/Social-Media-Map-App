@@ -123,17 +123,26 @@ export default App */
 // import '../App.css'; 
 //   <img src="./Pixel_Art/Sprite_Placeholder.png" alt="Sprite placeholder" id="Sprite">
 import SidebarButton from './Components/SidebarButton'; 
- import userSprite from "./assets/Sprite_Placeholder.png"; 
+import userSprite from "./assets/Sprite_Placeholder.png"; 
+import Posts from './Components/Posts';
 
 function App() {
   return(
     <>
-    <div id="sidebar">
+    <aside id="sidebar">
+    <aside id="navbarContainer">
         <SidebarButton name="Profile"/>
         <SidebarButton name="Badges"/>
         <SidebarButton name="Posts"/>
-        <SidebarButton name="Locations"/>
-    </div>
+        <SidebarButton name="Locations"/>    
+        </aside>
+          <section id="postContainer">
+          <Posts/>
+          <Posts/>
+          <Posts/>
+          <Posts/>
+        </section>
+</aside>
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
     </div>
