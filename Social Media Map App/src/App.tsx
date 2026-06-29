@@ -137,10 +137,9 @@ function App() {
         <SidebarButton name="Locations"/>    
         </aside>
           <section id="postContainer">
-          <Posts/>
-          <Posts/>
-          <Posts/>
-          <Posts/>
+          <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/>
+          <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/f1cc/imgp3030_6.jpg"/>
+          <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/dcfc/greece_kefalonia_fiscardo_harbor.jpg"/>
         </section>
 </aside>
     <div id="spriteContainer">
