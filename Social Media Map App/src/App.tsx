@@ -122,25 +122,30 @@ function App() {
 export default App */ 
 // import '../App.css'; 
 //   <img src="./Pixel_Art/Sprite_Placeholder.png" alt="Sprite placeholder" id="Sprite">
-import SidebarButton from './Components/SidebarButton'; 
+import SidebarButton from './Components/SidebarButton';
+// import sidebarCheck from './Components/SidebarButton';  
 import userSprite from "./assets/Sprite_Placeholder.png"; 
 import Posts from './Components/Posts';
+import {useState} from 'react'; 
+
 
 function App() {
+    const [isbarCheck, setbarCheck] = useState("Profile"); 
   return(
     <>
     <aside id="sidebar">
     <aside id="navbarContainer">
-        <SidebarButton name="Profile"/>
-        <SidebarButton name="Badges"/>
-        <SidebarButton name="Posts"/>
-        <SidebarButton name="Locations"/>    
+        <SidebarButton name="Profile" onClick={() => (setbarCheck("Profile"))}/>
+        <SidebarButton name="Badges" onClick={() => (setbarCheck("Badges"))}/>
+        <SidebarButton name="Posts" onClick={() => (setbarCheck("Posts"))}/>
+        <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>    
         </aside>
-          <section id="postContainer">
+        {/* If profile button is true render this */}
+       {isbarCheck ==="Profile" && <section id="postContainer">
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/>
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/f1cc/imgp3030_6.jpg"/>
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/dcfc/greece_kefalonia_fiscardo_harbor.jpg"/>
-        </section>
+        </section> } 
 </aside>
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
