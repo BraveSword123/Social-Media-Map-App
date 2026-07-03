@@ -384,3 +384,33 @@ body{
     margin-top: 602px; 
     height: 100.2px; 
 }
+
+#viewAccountButton{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic; 
+    font-size: 37px;
+    margin-top: 20px; 
+    margin-left: 30px;  
+    width: 330px; 
+    height: 80px; 
+    cursor: pointer; 
+    background-color: #fffafc;
+    border: 3px solid #ff697a; 
+    color: #ff697a;  
+}
+
+#profileContainer{
+  margin-top: 60px; 
+}
+
+#viewAccountButton:hover{
+    background-color: #ff697a;
+    border: 3px solid #ff697a; 
+    color: #fffafc; 
+    transition: 0.3s; 
+}
+
+#viewAccountButton:active{
+  transform: scale(0.98); 
+}

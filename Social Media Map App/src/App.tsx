@@ -171,6 +171,11 @@ function App() {
           </footer>
         </section>
         }
+        { isbarCheck === "Profile" &&   <section id="profileContainer">
+    <button id="viewAccountButton">Create Post</button>
+   </section>
+
+        }
 </aside>
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
