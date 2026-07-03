@@ -134,9 +134,9 @@ import Posts from './Components/Posts';
 import Badge from './Components/Badge';
 import {useState} from 'react'; 
 
-
 function App() {
     const [isbarCheck, setbarCheck] = useState("Profile"); 
+    const [location, setLocation] = useState(false); 
   return(
     <>
     <aside id="sidebar">
@@ -165,7 +165,9 @@ function App() {
             Please let this site know your location to use this feature. 
           </article>
           <footer id="locationFooter">
-            <button id="toggleLocationButton"> Location: Off </button> 
+            <button id="toggleLocationButton" onClick = {() => setLocation((p) => !p)}>
+                {location ? "Location: On" : "Location: Off"}
+              </button> 
           </footer>
         </section>
         }
