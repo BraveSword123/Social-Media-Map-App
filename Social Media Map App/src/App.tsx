@@ -160,6 +160,15 @@ function App() {
           <Badge img={swanBadge}/>
         </section>
         }
+        { isbarCheck === "Locations" && <section id="locationsContainer">
+          <article id="turnOnLocationMessage">
+            Please let this site know your location to use this feature. 
+          </article>
+          <footer id="locationFooter">
+            <button id="toggleLocationButton"> Location: Off </button> 
+          </footer>
+        </section>
+        }
 </aside>
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
