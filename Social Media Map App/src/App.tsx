@@ -124,8 +124,14 @@ export default App */
 //   <img src="./Pixel_Art/Sprite_Placeholder.png" alt="Sprite placeholder" id="Sprite">
 import SidebarButton from './Components/SidebarButton';
 // import sidebarCheck from './Components/SidebarButton';  
-import userSprite from "./assets/Sprite_Placeholder.png"; 
+import userSprite from "./Images/Sprite_Placeholder.png"; 
+import bunnyBadge from "./Images/bunny_placeholder.png"
+import dolphinBadge from "./Images/dolphin_placeholder.png"
+import jellyfishBadge from "./Images/jellyfish_placeholder.png"
+import goldfishBadge from "./Images/goldfish_placeholder.png"
+import swanBadge from "./Images/swan_placeholder.png"
 import Posts from './Components/Posts';
+import Badge from './Components/Badge';
 import {useState} from 'react'; 
 
 
@@ -141,11 +147,19 @@ function App() {
         <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>    
         </aside>
         {/* If profile button is true render this */}
-       {isbarCheck ==="Profile" && <section id="postContainer">
+       {isbarCheck ==="Posts" && <section id="postContainer">
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/>
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/f1cc/imgp3030_6.jpg"/>
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/dcfc/greece_kefalonia_fiscardo_harbor.jpg"/>
         </section> } 
+        { isbarCheck === "Badges" && <section id="badgeContainer">
+          <Badge img={bunnyBadge}/>
+          <Badge img={dolphinBadge}/>
+          <Badge img={jellyfishBadge}/>
+          <Badge img={goldfishBadge}/>
+          <Badge img={swanBadge}/>
+        </section>
+        }
 </aside>
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 

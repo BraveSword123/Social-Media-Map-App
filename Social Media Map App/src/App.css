@@ -307,6 +307,36 @@ body{
     margin-top: 8px; 
 }
 
+/*
+#badgeContainer{
+    display: none; 
+}
+*/ 
+
+.badge{
+    background-color: #fffafc; 
+    border: 2px solid #ff697a; 
+    height: 110px; 
+    width: 90px; 
+    margin-top: 10px; 
+    margin-left: 10px; 
+    cursor: pointer; 
+}
+
+.badge:hover{
+    background-color: #ffdae9;  
+    transition: 0.3s;
+}
+
+.badge:active{
+    transform: scale(0.98); 
+}
+
+.badgeImage{
+    height: 70px; 
+}
+
+
 /* #postContainer{
     display: none; 
 }  */ 
