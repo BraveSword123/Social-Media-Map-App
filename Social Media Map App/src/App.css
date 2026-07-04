@@ -16,7 +16,6 @@ body{
 
 #sidebar{
     height: 860px; 
-    /* width: 400px; */ 
     width: 395px; 
     background-color: #fef0f5;
     border: 2px solid #c7387d;  
@@ -151,10 +150,6 @@ body{
 .badgeImage{
     height: 70px; 
 }
-
-/* #postContainer{
-    display: none; 
-}  */ 
 
 #turnOnLocationMessage{
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

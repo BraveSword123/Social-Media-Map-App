@@ -7,11 +7,7 @@ import goldfishBadge from "../Images/goldfish_placeholder.png";
 import swanBadge from "../Images/swan_placeholder.png";
 import Posts from "../Components/Posts";
 import Badge from "../Components/Badge";
-// import Login from './Login.tsx'
-
 import {useState} from 'react'; 
-import { Link } from 'react-router-dom';
-// import {HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
  const [isbarCheck, setbarCheck] = useState("Profile"); 
@@ -53,20 +49,12 @@ function App() {
         }
         { isbarCheck === "Profile" &&   <section id="profileContainer">
     <button id="viewAccountButton">View Account</button>
-    {/* <Link to="/login">
-    <button>Login</button>
-    </Link> */ }
    </section>
         }
 </aside>
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
     </div>
-    {/* <Router>
-     <Routes>
-        <Route path="/login" element={<Login/>}></Route>
-      </Routes>
-    </Router> */ }
     </>
   ); 
 }
