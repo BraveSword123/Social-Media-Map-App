@@ -151,17 +151,50 @@ body{
     height: 70px; 
 }
 
-#turnOnLocationMessage{
+/* Make turnOnLocationMessage and locationDescButton have a shared Class */ 
+
+.sideBarLocationMessages{
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 23px; 
-    margin-top: 70px;
-    margin-left: 10px;  
-    margin-right: 10px;  
-    padding: 10px; 
     background-color: #fffafc;
     border: 2px solid #ff697a; 
     color: #ff697a;
+     padding: 10px; 
+}
+#turnOnLocationMessage{
+    margin-top: 70px;
+    margin-left: 10px;  
+    margin-right: 10px;   
     text-align: center;  
+}
+
+#locationButtonContainer{
+    margin-top: 70px;
+    margin-bottom: 150px; 
+}
+.locationDescButton{
+    margin-top: 30px;
+    margin-left: 10px; 
+    width: 330px; 
+}
+
+.subtitleLocationDescButton{
+      display: inline-block;
+     font-family: 'Courier New', Courier, monospace; 
+     color: rgba(0, 0, 0, 0.866); 
+     font-size: 18px; 
+     margin-left: 20px; 
+     line-height: 1.3;  
+}
+
+.locationDescButton:hover{
+    cursor:pointer; 
+    background-color: #F8D6E2;
+    transition: 0.3s;  
+}
+
+.locationDescButton:active{
+      transform: scale(0.98);
 }
 
 #toggleLocationButton{
@@ -192,8 +225,11 @@ body{
 #locationFooter{
     background-color: #ffc1c8; 
     border-top: 2px solid #ff697a;  
-    margin-top: 602px; 
+    /* margin-top: 602px; */ 
+    bottom: 0px; 
     height: 100.2px; 
+    position: fixed; 
+    width: 395px; 
 }
 
 #viewAccountButton{

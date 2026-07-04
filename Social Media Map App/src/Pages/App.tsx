@@ -7,11 +7,12 @@ import goldfishBadge from "../Images/goldfish_placeholder.png";
 import swanBadge from "../Images/swan_placeholder.png";
 import Posts from "../Components/Posts";
 import Badge from "../Components/Badge";
+import LocationDescButton from "../Components/LocationDescButton";
 import {useState} from 'react'; 
 
 function App() {
  const [isbarCheck, setbarCheck] = useState("Profile"); 
-    const [location, setLocation] = useState(false); 
+ const [location, setLocation] = useState(false); 
 
   return(
     <>
@@ -22,7 +23,6 @@ function App() {
         <SidebarButton name="Posts" onClick={() => (setbarCheck("Posts"))}/>
         <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>    
         </aside> 
-
        {isbarCheck ==="Posts" && <section id="postContainer">
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/>
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/f1cc/imgp3030_6.jpg"/>
@@ -37,9 +37,16 @@ function App() {
         </section>
         }
         { isbarCheck === "Locations" && <section id="locationsContainer">
-          <article id="turnOnLocationMessage">
+         {  location === false && <article id="turnOnLocationMessage" className="sideBarLocationMessages">
             Please let this site know your location to use this feature. 
-          </article>
+          </article>}
+          { location === true && 
+          <section id="locationButtonContainer">
+          <LocationDescButton locationName = "Location Name" locationType="Location Type" locationDistance="5 min"/> 
+          <LocationDescButton locationName = "Location Name" locationType="Location Type" locationDistance="5 min"/> 
+          <LocationDescButton locationName = "Location Name" locationType="Location Type" locationDistance="5 min"/> 
+          </section>
+          } 
           <footer id="locationFooter">
             <button id="toggleLocationButton" onClick = {() => setLocation((p) => !p)}>
                 {location ? "Location: On" : "Location: Off"}
@@ -47,6 +54,7 @@ function App() {
           </footer>
         </section>
         }
+
         { isbarCheck === "Profile" &&   <section id="profileContainer">
     <button id="viewAccountButton">View Account</button>
    </section>
