@@ -3,17 +3,29 @@ body{
     font-weight: 550;
     overflow-y: hidden; 
 }
-#sidebar{
-    height: 860px; 
-    width: 400px; 
+#navbarContainer{
+    height: 60px; 
+    width: 400px;  
     background-color: #fef0f5;
     border: 2px solid #c7387d;  
     margin: -8px; 
     overflow-y: auto;  
+    display: flex; 
+    position:fixed;  
+}
+
+#sidebar{
+    height: 860px; 
+    width: 395px; 
+    background-color: #fef0f5;
+    border: 2px solid #c7387d;  
+    margin: -8px; 
+    overflow-y: auto; 
+    overflow-x: hidden;  
 }
 
  #sidebar::-webkit-scrollbar{
-    width: 15px; 
+    width: 15px;  
 }    
 
 #sidebar::-webkit-scrollbar-track{
@@ -36,9 +48,6 @@ body{
      border: 1px solid #ca588f; 
 }
 
-#navbarContainer{
-    display: flex; 
-}
 .navbarElement{
     background: #ff69a0; 
     height: 60px; 
@@ -81,7 +90,7 @@ body{
     justify-content: space-between; 
     align-items: center; 
     gap: 20px; 
-    margin-top: 20px; 
+    margin-top: 70px; 
 }
 
 .post{
@@ -109,25 +118,22 @@ body{
     width: 270px;   
 }
 
-#postText{
+.postText{
     margin-top: 8px; 
 }
 
-#postContainer{
-    display: none; 
-} 
-
-
 #badgeContainer{
-    display: none; 
+    /* display: none; */ 
+    margin-top: 60px; 
 }
+
 
 .badge{
     background-color: #fffafc; 
     border: 2px solid #ff697a; 
     height: 110px; 
     width: 90px; 
-    margin-top: 10px; 
+    margin-top: 10px;  
     margin-left: 10px; 
     cursor: pointer; 
 }
@@ -145,36 +151,10 @@ body{
     height: 70px; 
 }
 
-#createPostButton{
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-    font-style: italic; 
-    font-size: 37px;
-    margin-top: 20px; 
-    margin-left: 30px;  
-    width: 330px; 
-    height: 80px; 
-    cursor: pointer; 
-    background-color: #fffafc;
-    border: 3px solid #ff697a; 
-    color: #ff697a;  
-}
-
-#createPostButton:hover{
-    background-color: #ff697a;
-    border: 3px solid #ff697a; 
-    color: #fffafc; 
-    transition: 0.3s; 
-}
-
-#createPostButton:active{
-  transform: scale(0.98); 
-}
-
 #turnOnLocationMessage{
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 23px; 
-    margin-top: 10px;
+    margin-top: 70px;
     margin-left: 10px;  
     margin-right: 10px;  
     padding: 10px; 
@@ -214,4 +194,34 @@ body{
     border-top: 2px solid #ff697a;  
     margin-top: 602px; 
     height: 100.2px; 
+}
+
+#viewAccountButton{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic; 
+    font-size: 37px;
+    margin-top: 20px; 
+    margin-left: 30px;  
+    width: 330px; 
+    height: 80px; 
+    cursor: pointer; 
+    background-color: #fffafc;
+    border: 3px solid #ff697a; 
+    color: #ff697a;  
+}
+
+#profileContainer{
+  margin-top: 60px; 
+}
+
+#viewAccountButton:hover{
+    background-color: #ff697a;
+    border: 3px solid #ff697a; 
+    color: #fffafc; 
+    transition: 0.3s; 
+}
+
+#viewAccountButton:active{
+  transform: scale(0.98); 
 }
