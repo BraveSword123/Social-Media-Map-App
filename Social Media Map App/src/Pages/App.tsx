@@ -18,10 +18,14 @@ function App() {
     <>
     <aside id="sidebar">
      <aside id="navbarContainer">
-        <SidebarButton name="Profile" onClick={() => (setbarCheck("Profile"))}/>
+       {/* <SidebarButton name="Profile" onClick={() => (setbarCheck("Profile"))}/>
         <SidebarButton name="Badges" onClick={() => (setbarCheck("Badges"))}/>
         <SidebarButton name="Posts" onClick={() => (setbarCheck("Posts"))}/>
-        <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>    
+        <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>  */} 
+        <SidebarButton name="Profile" setbarCheck={setbarCheck}/>
+        <SidebarButton name="Badges" setbarCheck={setbarCheck}/>
+        <SidebarButton name="Posts" setbarCheck={setbarCheck}/>
+        <SidebarButton name="Locations" setbarCheck={setbarCheck}/> 
         </aside> 
        {isbarCheck ==="Posts" && <section id="postContainer">
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/>
