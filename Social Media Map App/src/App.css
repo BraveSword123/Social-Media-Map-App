@@ -87,7 +87,7 @@ body{
     cursor: pointer; 
 }
 
-#postContainer{
+#minipostContainer{
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
@@ -96,7 +96,7 @@ body{
     margin-top: 70px; 
 }
 
-.post{
+.minipost{
     background-color: #ffffff;
     height: 290px; 
     width: 300px; 
@@ -106,13 +106,15 @@ body{
     padding-left: 25px; 
     }
 
-    .post:hover{
+    .minipost:hover{
         border: 2px solid #000000; 
     } 
 
-    .post:active{
-        transform: scale(0.98); 
+    .minipost:active{
+        /* transform: scale(0.98); */ 
+        background-color:rgb(236, 235, 235);
         transition: 0.3s;
+       /* I may change this later */ 
     }
 
 .image{
@@ -121,7 +123,7 @@ body{
     width: 270px;   
 }
 
-.postText{
+.minipostText{
     margin-top: 8px; 
 }
 
