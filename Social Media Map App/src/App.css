@@ -64,12 +64,8 @@ body{
         background: #fba9c7;
 } */ 
  
-.navbarElement-active{ 
+.navbarElement.active{ 
         background: #fba9c7;
-            height: 60px; 
-    width: 100px; 
-    border: 1px solid #9c1e1e; 
-    cursor: pointer; 
 }
 
 #spriteContainer{ 
@@ -158,8 +154,6 @@ body{
     height: 70px; 
 }
 
-/* Make turnOnLocationMessage and locationDescButton have a shared Class */ 
-
 .sideBarLocationMessages{
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 23px; 
@@ -186,8 +180,8 @@ body{
 }
 
 .subtitleLocationDescButton{
-      display: inline-block;
-     font-family: 'Courier New', Courier, monospace; 
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace; 
      color: rgba(0, 0, 0, 0.866); 
      font-size: 18px; 
      margin-left: 20px; 

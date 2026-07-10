@@ -18,10 +18,6 @@ function App() {
     <>
     <aside id="sidebar">
      <aside id="navbarContainer">
-       {/* <SidebarButton name="Profile" onClick={() => (setbarCheck("Profile"))}/>
-        <SidebarButton name="Badges" onClick={() => (setbarCheck("Badges"))}/>
-        <SidebarButton name="Posts" onClick={() => (setbarCheck("Posts"))}/>
-        <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>  */} 
         <SidebarButton name="Profile" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
         <SidebarButton name="Badges" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
         <SidebarButton name="Posts" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
