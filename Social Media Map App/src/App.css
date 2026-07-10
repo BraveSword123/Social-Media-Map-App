@@ -60,9 +60,16 @@ body{
     background: #fba9c7;
     transition: 0.3s; 
 }
-
-.navbarElement.active{ /* Create Class List active*/ 
+ /* .navbarElement.active{ 
         background: #fba9c7;
+} */ 
+ 
+.navbarElement-active{ 
+        background: #fba9c7;
+            height: 60px; 
+    width: 100px; 
+    border: 1px solid #9c1e1e; 
+    cursor: pointer; 
 }
 
 #spriteContainer{ 

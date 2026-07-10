@@ -22,10 +22,10 @@ function App() {
         <SidebarButton name="Badges" onClick={() => (setbarCheck("Badges"))}/>
         <SidebarButton name="Posts" onClick={() => (setbarCheck("Posts"))}/>
         <SidebarButton name="Locations" onClick={() => (setbarCheck("Locations"))}/>  */} 
-        <SidebarButton name="Profile" setbarCheck={setbarCheck}/>
-        <SidebarButton name="Badges" setbarCheck={setbarCheck}/>
-        <SidebarButton name="Posts" setbarCheck={setbarCheck}/>
-        <SidebarButton name="Locations" setbarCheck={setbarCheck}/> 
+        <SidebarButton name="Profile" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
+        <SidebarButton name="Badges" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
+        <SidebarButton name="Posts" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
+        <SidebarButton name="Locations" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/> 
         </aside> 
        {isbarCheck ==="Posts" && <section id="postContainer">
           <Posts desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at ligula turpis." img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/>
