@@ -1,12 +1,12 @@
 import '../App.css'
-import {useState} from 'react'; 
 
-function SidebarButton(props: {name: string, onClick:React.MouseEventHandler<HTMLButtonElement>}){ 
-const [isClicked, setisClicked] = useState(false); 
-  
+function SidebarButton({name, setbarCheck, isbarCheck}: any){   
+
   return(
-      <button className="navbarElement" onClick={props.onClick} 
-        >{props.name}</button>  
+    <>
+     <button className={isbarCheck === name ? 'navbarElement active' : 'navbarElement'} onClick={() => (setbarCheck(name))} 
+        >{name}</button>
+        </>
   ); 
 }
 
