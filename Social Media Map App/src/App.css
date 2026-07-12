@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 body{
     font-family: 'Courier New', Courier, monospace;  
     font-weight: 550;
-    overflow-y: hidden; 
+    /* overflow-y: hidden; */ 
 }
 #navbarContainer{
     height: 60px; 
@@ -119,7 +121,7 @@ body{
        /* I may change this later */ 
     }
 
-.image{
+.minipostImage{
     height: 210px;
     border: 1px solid #000000;
     width: 270px;   
@@ -127,6 +129,61 @@ body{
 
 .minipostText{
     margin-top: 8px; 
+}
+
+.largePost{
+    background-color: white;
+    border: 1px solid black; 
+    width: 600px;
+    padding: 10px;   
+    z-index: 5; 
+   /*  display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */ 
+    /* display: grid; 
+    grid-template-columns: auto auto; */ 
+}
+
+.upperlargePostContainer{
+    display: flex; 
+    align-self: flex-start; 
+}
+
+#lowerlargePostContainer{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+.largePost span{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 40px;
+}
+
+.largepostImage{
+    width: 550px; 
+    display: block;
+    margin: auto;
+}
+
+.largePost button{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder; 
+    font-size: 20px; 
+}
+
+#learnmoreButton{
+    margin-top: 10px; 
+    background-color: #D9D9D9;
+    border: 2px solid black; 
+    width: 150px; 
+    height: 40px;
+}
+
+#postfollowButton{
+    width: 120px; 
+    height: 40px; 
 }
 
 #badgeContainer{

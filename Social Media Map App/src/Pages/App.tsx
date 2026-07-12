@@ -58,10 +58,10 @@ function App() {
 
         { isbarCheck === "Profile" &&   <section id="profileContainer">
     <button id="viewAccountButton">View Account</button>
-            { /*<LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg"/> */}
    </section>
         }
 </aside>
+  {/* <LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName"/> */}
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
     </div>
