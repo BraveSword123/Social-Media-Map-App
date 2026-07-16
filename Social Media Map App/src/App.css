@@ -207,7 +207,7 @@ body{
     transition: 0.3s;
 }
 
-.learnmoreButton:active, .postfollowButton:active{
+.largePost button:active{
     transform: scale(0.98);
 }
 
@@ -220,10 +220,17 @@ body{
     bottom: 20px; 
 }
 
-.postfollowButton:hover{
+button:hover{
     background-color: rgb(230, 227, 227);
     transition: 0.3s;
 } 
+
+.postCloseButton{
+    position: relative; 
+    left: 97px;
+    height: 30px; 
+    background-color: transparent;
+}
 
 #badgeContainer{
     /* display: none; */ 

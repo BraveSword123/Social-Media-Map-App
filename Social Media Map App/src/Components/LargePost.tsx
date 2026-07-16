@@ -4,7 +4,11 @@ function LargePost(props: any) {
 
   return(
     <article className="largePost">
-   <div className="upperlargePostContainer"><span>Visited {props.locationName}</span>  <button className="learnmoreButton">Learn More</button></div> 
+   <div className="upperlargePostContainer">
+    <span>Visited {props.locationName}</span> 
+    <button className="learnmoreButton">Learn More</button>
+    <button className="postCloseButton">X</button>
+    </div> 
     <br/>
     <img src={props.img}/>
     <p>{props.desc}</p>   
