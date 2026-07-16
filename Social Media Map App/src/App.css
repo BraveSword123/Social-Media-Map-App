@@ -3,7 +3,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;  
     font-weight: 550;
-    /* overflow-y: hidden; */ 
+    overflow-y: hidden;  
 }
 #navbarContainer{
     height: 60px; 
@@ -24,6 +24,8 @@ body{
     margin: -8px; 
     overflow-y: auto; 
     overflow-x: hidden;  
+    position: absolute; 
+    z-index: -1;   
 }
 
  #sidebar::-webkit-scrollbar{
@@ -135,36 +137,55 @@ body{
     background-color: white;
     border: 1px solid black; 
     width: 600px;
-    padding: 10px;   
-    z-index: 5; 
-   /*  display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */ 
-    /* display: grid; 
-    grid-template-columns: auto auto; */ 
+    padding: 10px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative; 
+    top: 130px; 
+    z-index: 10; 
+    margin: auto; 
 }
 
 .upperlargePostContainer{
     display: flex; 
     align-self: flex-start; 
+    gap: 15px; 
 }
 
-#lowerlargePostContainer{
+.lowerlargePostContainer{
     display: flex; 
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-around;
+    font-size: 20px;  
+    position: relative;
+    top: 20px; 
 }
 
-.largePost span{
+.lowerleftlargePostContainer{
+    display: flex; 
+    gap: 10px; 
+    justify-content: flex-end;
+    position: relative;
+    left: 20px; 
+}
+
+.upperlargePostContainer span{
     font-family: 'Reenie Beanie', cursive;
     font-size: 40px;
+    position: relative; 
+    top: 5px; 
 }
 
-.largepostImage{
+.lowerlargePostContainer span{
+    position: relative; 
+    right: 30px; 
+}
+
+.largePost img{
     width: 550px; 
     display: block;
     margin: auto;
+    border: 1px solid black; 
 }
 
 .largePost button{
@@ -173,7 +194,7 @@ body{
     font-size: 20px; 
 }
 
-#learnmoreButton{
+.learnmoreButton{
     margin-top: 10px; 
     background-color: #D9D9D9;
     border: 2px solid black; 
@@ -181,16 +202,33 @@ body{
     height: 40px;
 }
 
-#postfollowButton{
+.learnmoreButton:hover{
+    background-color: #b6b3b3;
+    transition: 0.3s;
+}
+
+.learnmoreButton:active, .postfollowButton:active{
+    transform: scale(0.98);
+}
+
+/* transform: scale(0.98); */ 
+.postfollowButton{
     width: 120px; 
     height: 40px; 
+    background-color: transparent;
+    position: relative;
+    bottom: 20px; 
 }
+
+.postfollowButton:hover{
+    background-color: rgb(230, 227, 227);
+    transition: 0.3s;
+} 
 
 #badgeContainer{
     /* display: none; */ 
     margin-top: 60px; 
 }
-
 
 .badge{
     background-color: #fffafc; 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from '../Components/createaccount.module.css';
+import styles from '../createaccount.module.css';
 import {useState} from 'react'; 
 
 function CreateAccount(){

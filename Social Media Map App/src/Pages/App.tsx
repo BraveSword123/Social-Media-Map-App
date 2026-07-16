@@ -10,6 +10,7 @@ import Badge from "../Components/Badge";
 import LocationDescButton from "../Components/LocationDescButton";
 import LargePost from "../Components/LargePost";
 import {useState} from 'react'; 
+// import { Link } from 'react-router-dom';
 
 function App() {
  const [isbarCheck, setbarCheck] = useState("Profile"); 
@@ -61,10 +62,13 @@ function App() {
    </section>
         }
 </aside>
-  {/* <LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName"/> */}
+   <LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis arcu a dui condimentum, sed ornare augue maximus. "/> 
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
     </div>
+     {/* <Link to="/createaccount">
+     <button>Create Account</button>
+     </Link> */} 
     </>
   ); 
 }

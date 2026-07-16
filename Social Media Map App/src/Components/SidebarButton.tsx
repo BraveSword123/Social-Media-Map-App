@@ -1,11 +1,11 @@
 import '../App.css'
 
-function SidebarButton({name, setbarCheck, isbarCheck}: any){   
+function SidebarButton({name, setbarCheck, isbarCheck, icon}: any){   
 
   return(
     <>
      <button className={isbarCheck === name ? 'navbarElement active' : 'navbarElement'} onClick={() => (setbarCheck(name))} 
-        >{name}</button>
+        >{icon}</button>
         </>
   ); 
 }
