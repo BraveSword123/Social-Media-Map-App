@@ -8,9 +8,10 @@ import swanBadge from "../Images/swan_placeholder.png";
 import MiniPost from "../Components/MiniPost";
 import Badge from "../Components/Badge";
 import LocationDescButton from "../Components/LocationDescButton";
-import LargePost from "../Components/LargePost";
+// import LargePost from "../Components/LargePost";
+import Footer from "../Components/Footer"
 import {useState} from 'react'; 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function App() {
  const [isbarCheck, setbarCheck] = useState("Profile"); 
@@ -20,6 +21,7 @@ function App() {
     <>
     <aside id="sidebar">
      <aside id="navbarContainer">
+      {/* Might want to find a better way to handle setbarCheck and isbarCheck in the future */}
         <SidebarButton name="Profile" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
         <SidebarButton name="Badges" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
         <SidebarButton name="Posts" setbarCheck={setbarCheck} isbarCheck={isbarCheck}/>
@@ -49,20 +51,24 @@ function App() {
           <LocationDescButton locationName = "Location Name" locationType="Location Type" locationDistance="5 min"/> 
           </section>
           } 
-          <footer id="locationFooter">
-            <button id="toggleLocationButton" onClick = {() => setLocation((p) => !p)}>
+         {/* <footer id="footer">
+            <button id="footerButton" onClick = {() => setLocation((p) => !p)}>
                 {location ? "Location: On" : "Location: Off"}
               </button> 
-          </footer>
+          </footer> */}
+          <Footer func={() => setLocation((p) => !p)} buttonText={location ? "Location: On" : "Location: Off"}/>
         </section>
         }
 
         { isbarCheck === "Profile" &&   <section id="profileContainer">
     <button id="viewAccountButton">View Account</button>
+    <Link to="/createaccount">
+      <Footer buttonText="Sign Out"/>
+    </Link>
    </section>
         }
 </aside>
-   <LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis arcu a dui condimentum, sed ornare augue maximus. "/> 
+   {/*<LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis arcu a dui condimentum, sed ornare augue maximus. "/> */}
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
     </div>

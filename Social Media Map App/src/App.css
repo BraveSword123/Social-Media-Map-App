@@ -305,7 +305,7 @@ button:hover{
       transform: scale(0.98);
 }
 
-#toggleLocationButton{
+#footerButton{
     font-size: 27px; 
     font-weight: 900; 
     font-style: italic; 
@@ -319,18 +319,18 @@ button:hover{
     cursor: pointer; 
 }
 
-#toggleLocationButton:hover{
+#footerButton:hover{
     background-color: #ff8f9c; 
     color: #fffafc;
     transition: 0.3s; 
 }
 
-#toggleLocationButton:active{
+#footerButton:active{
     transform: scale(0.98); 
     transition: 0.3s;
 }
 
-#locationFooter{
+#footer{
     background-color: #ffc1c8; 
     border-top: 2px solid #ff697a;  
     /* margin-top: 602px; */ 
