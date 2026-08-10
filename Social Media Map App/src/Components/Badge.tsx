@@ -5,11 +5,15 @@ import '../App.css'
 
 // const [isActive, setisActive] = useState(false); 
 
-function Badge(props: any) {
+type props = {
+  img: string; 
+}
+
+function Badge({img}: props) {
 
   return(
     <button className="badge">
-        <img src={props.img} className="badgeImage"></img>
+        <img src={img} className="badgeImage"></img>
     </button>
   ); 
 }

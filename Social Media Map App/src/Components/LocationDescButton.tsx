@@ -1,15 +1,21 @@
 import '../App.css'
 
-function LocationDescButton(props: any) {
+type props = {
+  locationName: string; 
+  locationType: string; 
+  locationDistance: string;
+}
+
+function LocationDescButton({locationName, locationType, locationDistance}:props) {
 
   return(
 
 <article className="sideBarLocationMessages locationDescButton">
-    {props.locationName}
+    {locationName}
     <br/>
-    <span className="subtitleLocationDescButton">{props.locationType}
+    <span className="subtitleLocationDescButton">{locationType}
     <br/>
-    {props.locationDistance}
+    {locationDistance}
     </span>
 </article> 
   ); 

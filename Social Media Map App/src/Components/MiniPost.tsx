@@ -1,9 +1,14 @@
 import '../App.css'
 import LargePost from "../Components/LargePost";
-import { useState } from "react"; 
+// import { useState } from "react"; 
 
+type props = {
+  img: string; 
+  desc: string; 
+  renderlargePost?: boolean; 
+}
 
-function MiniPost({img, desc, renderlargePost}: any) {
+function MiniPost({img, desc, renderlargePost}: props) {
 
  // const [renderlargePost, setrenderlargePost] = useState(false); 
 

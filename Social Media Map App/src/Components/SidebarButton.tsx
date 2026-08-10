@@ -1,6 +1,13 @@
 import '../App.css'
 
-function SidebarButton({name, setbarCheck, isbarCheck, icon}: any){   
+type props = {
+  name: string; 
+  setbarCheck: React.Dispatch<React.SetStateAction<string>>;
+  isbarCheck: string; 
+  icon?: string; 
+  
+}
+function SidebarButton({name, setbarCheck, isbarCheck, icon}: props){   
 
   return(
     <>

@@ -68,7 +68,9 @@ function App() {
    </section>
         }
 </aside>
-   {/*<LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis arcu a dui condimentum, sed ornare augue maximus. "/> */}
+    {/* 
+   <LargePost locationName="Location Name" img="https://free-images.com/lg/22a5/books_book_store_library.jpg" userName="userName" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis arcu a dui condimentum, sed ornare augue maximus. "/> 
+   */}
     <div id="spriteContainer">
       <img id="Sprite" src={userSprite}/> 
     </div>

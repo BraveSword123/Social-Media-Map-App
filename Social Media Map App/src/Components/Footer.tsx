@@ -1,11 +1,16 @@
 import '../App.css'
 
-function Footer(props: any) {
+type props = {
+    buttonText: string; 
+    func?: () => void; 
+}
+
+function Footer({buttonText, func}: props) {
     return (
         <footer id="footer">
-            <button id="footerButton" onClick = {props.func}>
+            <button id="footerButton" onClick = {func}>
                 {/* location ? "Location: On" : "Location: Off" */ }
-                {props.buttonText}
+                {buttonText}
               </button> 
           </footer>
     ); 
