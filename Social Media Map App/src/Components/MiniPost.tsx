@@ -1,5 +1,5 @@
 import '../App.css'
-import LargePost from "../Components/LargePost";
+// import LargePost from "../Components/LargePost";
 // import { useState } from "react"; 
 
 type props = {
@@ -21,7 +21,7 @@ function MiniPost({img, desc, renderlargePost}: props) {
           console.log("Post is already rendered"); 
         }
         else {
-          <LargePost img={img} desc={desc}/> 
+          {/* <LargePost img={img} desc={desc}/> */}
           console.log("Rendering Post Right Now"); 
         }
       }

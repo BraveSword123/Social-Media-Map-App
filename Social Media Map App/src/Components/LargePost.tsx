@@ -1,23 +1,31 @@
 import '../App.css'
-import { useState } from "react";
+// import { useState } from "react";
 
-function LargePost(props: any) {
+ type props = {
+  img: string; 
+  desc: string; 
+  userName: string; 
+  locationName: string; 
+ // renderlargePost?: boolean; 
+}
 
-const [renderlargePost, setrenderlargePost] = useState(false);
+function LargePost({img, desc, userName, locationName} : props) {
+
+// const [renderlargePost, setrenderlargePost] = useState(false);
 
   return(
     <article className="largePost">
    <div className="upperlargePostContainer">
-    <span>Visited {props.locationName}</span> 
+    <span>Visited {locationName}</span> 
     <button className="learnmoreButton">Learn More</button>
-    <button className="postCloseButton"
-      onClick={() => setrenderlargePost(false)}
-    >X</button>
+    <button className="postCloseButton">
+      {/* onClick={() => setrenderlargePost(false)} */}
+    X</button> 
     </div> 
     <br/>
-    <img src={props.img}/>
-    <p>{props.desc}</p>   
-    <div className="lowerlargePostContainer"><span>@{props.userName}</span> 
+    <img src={img}/>
+    <p>{desc}</p>   
+    <div className="lowerlargePostContainer"><span>@{userName}</span> 
       <div className="lowerleftlargePostContainer">
         <button className="postfollowButton">Follow</button>
         <div>Comment</div> {/* Placeholder for Comment Icon */}
