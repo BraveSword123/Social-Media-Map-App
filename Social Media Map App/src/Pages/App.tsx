@@ -15,7 +15,9 @@ import { Link } from 'react-router-dom';
 import { IoMdPhotos } from "react-icons/io";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { FaAward } from "react-icons/fa6";
-import { RxAvatar } from "react-icons/rx";
+// import { RxAvatar } from "react-icons/rx";
+// import { CgProfile } from "react-icons/cg";
+import { BsPersonCircle } from "react-icons/bs";
 
 function App() {
  const [isbarCheck, setbarCheck] = useState("Profile"); 
@@ -26,7 +28,7 @@ function App() {
     <aside id="sidebar">
      <aside id="navbarContainer">
       {/* Might want to find a better way to handle setbarCheck and isbarCheck in the future */}
-        <SidebarButton name="Profile" setbarCheck={setbarCheck} isbarCheck={isbarCheck} icon={<RxAvatar size="35" color="white"/>}/>
+        <SidebarButton name="Profile" setbarCheck={setbarCheck} isbarCheck={isbarCheck} icon={<BsPersonCircle size="35" color="white"/>}/>
         <SidebarButton name="Badges" setbarCheck={setbarCheck} isbarCheck={isbarCheck} icon={<FaAward size="35" color="white"/>}/>
         <SidebarButton name="Posts" setbarCheck={setbarCheck} isbarCheck={isbarCheck} icon={<IoMdPhotos size="35" color="white"/>}/>
         <SidebarButton name="Locations" setbarCheck={setbarCheck} isbarCheck={isbarCheck} icon={<HiBuildingOffice2 size="35" color="white"/>} /> 
