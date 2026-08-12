@@ -73,6 +73,10 @@ body{
         background: #fba9c7;
 }
 
+#sidebarIcon{
+    color: white;
+}
+
 #spriteContainer{ 
     height: 180px; 
     width: 118px; 
